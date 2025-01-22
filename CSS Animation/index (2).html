@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box"></div> 
+
+
+    <!-- keyframes -->
+
+        <div id="main">
+        <div id="item1"></div>
+        <div id="item2"></div>
+        <div id="item3"></div>
+
+    </div> 
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+</div> 
+
+</body>
+</html>
+
+<style>
+/* animation */
+ #main{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+} 
+
+
+
+#item1{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    animation: linear 10s myrotate;
+}
+
+#item2{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    animation: linear 10s myrotate;
+
+} 
+
+
+ #item3{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    animation: linear 10s myrotate;
+
+}
+
+@keyframes myrotate{
+    from{
+        transform: rotate(90deg); 
+    }
+    to{
+        transform: rotate(360deg); 
+
+    } 
+
+} 
+
+</style>
